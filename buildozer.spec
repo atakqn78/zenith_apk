@@ -1,4 +1,6 @@
 [app]
+# (str) Source directory where your app lives
+source.dir = .
 
 # (str) Title of your application
 title = Zenith
