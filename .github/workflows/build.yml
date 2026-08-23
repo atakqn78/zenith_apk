@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-    - name: Repo'ye Git
+    - name: Repo'ya Git
       uses: actions/checkout@v4
 
     - name: Java Kurulumu (JDK 17)
@@ -33,26 +33,16 @@ jobs:
           build-essential \
           git \
           ffmpeg \
-          libsdl2-dev \
-          libsdl2-image-dev \
-          libsdl2-mixer-dev \
-          libsdl2-ttf-dev \
-          libportmidi-dev \
-          libswscale-dev \
-          libavformat-dev \
-          libavcodec-dev \
+          libltdl-dev \
+          libffi-dev \
+          libssl-dev \
+          libsqlite3-dev \
           zlib1g-dev \
-          libgstreamer1.0-dev \
-          gstreamer1.0-plugins-base \
-          gstreamer1.0-plugins-good \
-          gstreamer1.0-plugins-bad \
           ant \
           autoconf \
           automake \
           libtool \
           pkg-config \
-          libffi-dev \
-          libssl-dev \
           libncurses5:i386 \
           libstdc++6:i386 \
           zlib1g:i386
