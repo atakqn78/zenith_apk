@@ -16,10 +16,8 @@ jobs:
 
     - name: Buildozer ile APK Derle (Docker)
       uses: docker://kivy/buildozer:latest
-      env:
-        BUILDOCER_ALLOW_ROOT: "1"
       with:
-        args: android debug
+        args: --yes android debug
 
     - name: APK Dosyasını Kaydet (Artifacts)
       uses: actions/upload-artifact@v4
