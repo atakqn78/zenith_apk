@@ -17,7 +17,7 @@ jobs:
     - name: Buildozer ile APK Derle (Docker)
       uses: docker://kivy/buildozer:latest
       env:
-        BUILDER_ALLOW_ROOT: "true"
+        BUILDOCER_ALLOW_ROOT: "1"
       with:
         args: android debug
 
