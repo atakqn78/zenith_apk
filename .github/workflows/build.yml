@@ -14,12 +14,10 @@ jobs:
     steps:
     - name: Repo'ya Git
       uses: actions/checkout@v4
-      with:
-        submodules: recursive
 
-    - name: Eski Kalıntıları Temizle
+    - name: Bozuk Git Modül Kayıtlarını Temizle
       run: |
-        rm -rf .buildozer bin .gradle
+        rm -rf .gitmodules .buildozer bin .gradle
 
     - name: Java Kurulumu (JDK 17)
       uses: actions/setup-java@v4
